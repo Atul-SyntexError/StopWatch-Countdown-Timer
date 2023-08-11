@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Phrrince">
+        <meta name="description" content="Stop watch and countdown timer made using vanilla js">
+
+        <meta property="og:title" content="Stop watch and countdown timer">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="src/OP.png">
+
+        <link rel="icon" href="src/stopwatch.png" type="image/icon-x">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <title>Stop watch and countdown timer</title>
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <header>
+                <h1>Stop watch and countdown timer</h1>
+            </header>
+
+            <main>
+                <div class="watch-timer">
+                    <h2><a href="#" id="toggle" class="toggle" title="toggle between stop watch and countdown timer">Stop Watch</a></h2>
+                    <div class="watch-face" id="stopwatch">
+                        <div class="display">
+                            <p><span class="hours" id="stopwatch-hours">00</span>hrs <span class="colon">:</span></p>
+                            <p><span class="minute" id="stopwatch-mins">00</span>min <span class="colon">:</span></p>
+                            <p><span class="second" id="stopwatch-sec">00</span>sec <span class="colon">:</span></p>
+                            <p><span class="millisecond" id="stopwatch-ms">00</span>ms&nbsp;</p>
+                        </div>
+                        <div class="controls">
+                            <button class="start" onclick="startStopWatch()">Start</button>
+                            <button class="pause" onclick="pause()">Pause</button>
+                            <button class="reset" onclick="resetStopWatch()">Reset</button>
+                        </div>
+                    </div>
+                    
+                    <div class="watch-face" id="countdown">
+                        <div class="display">
+                            <p><span class="hours" id="cdtimer-hours">00</span>hrs <span class="colon">:</span></p>
+                            <p><span class="minute" id="cdtimer-mins">00</span>min <span class="colon">:</span></p>
+                            <p><span class="second" id="cdtimer-sec">00</span>sec <span class="colon">:</span></p>
+                            <p><span class="millisecond" id="cdtimer-ms">00</span>ms&nbsp;</p>
+                        </div>
+                        <div class="controls">
+                            <button class="start" onclick="startCountDownTimer()">Start</button>
+                            <button class="set-timer" onclick="setCountDownTimer()">Set timer</button>
+                            <button class="pause" onclick="pause()">Pause</button>
+                            <button class="reset" onclick="resetCountDownTimer()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            <footer>
+                <p><span class="footer">Made by <a href="https://github.com/Atul-SyntexError" title="Goto @Atul-SyntexError" target="_blank">Phrrince</a></span></p>
+            </footer>
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
